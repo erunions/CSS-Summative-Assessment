@@ -1,0 +1,123 @@
+body {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, #ffaec9, #6d3963, #ffaec9);
+    background-size: 400% 400%;
+    -webkit-animation: bgGradient 30s ease infinite;
+    -moz-animation: bgGradient 30s ease infinite;
+    animation: bgGradient 30s ease infinite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    text-shadow: 0px 2px 1px #000000;
+    line-height: 25px;
+    font-size: 18px;
+}
+nav {
+    border-radius: 10px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    display:flex;
+    justify-content: center;
+    width: 97.58vw;
+    z-index: 5;
+}
+nav a {
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    color: rgb(148, 148, 148);
+    transition: font-size 1s, color 1s, background-color 1s ease;
+    flex-grow: 1;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+}
+#titlebox {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 40vw;
+    margin: 0 auto;
+    transition: transform 1s ease;
+}
+#titlebox:hover {
+    transform: scale(1.01, 1.01);
+}
+
+@-webkit-keyframes bgGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes bgGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes bgGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+.supplement {
+    border-radius: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0);
+}
+.blurb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 90vw;
+    display: block;
+    overflow: auto;
+    transition: transform 1s ease;
+}
+.blurb:hover {
+    transform: scale(1.01, 1.01);
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #6d3963; 
+}
+    
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 7px 0px 0px #6d3963; 
+    background: #ffaec9;  
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #ffe0ea; 
+}
+.linkbox {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 80vw;
+    height: 800px;
+    overflow: auto;
+    transition: transform 1s ease;
+    margin: 0 auto;
+}
+.linkbox:hover {
+    transform: scale(1.005, 1.005);
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Backgrounds And Text</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+        <style>
+            .aboutimage {
+                border-radius: 10px;
+                width: 200px;
+                height: 300px;
+                margin-right: 10px;
+                float: left;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            .about {
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                width: 90vw;
+                display: block;
+                overflow: auto;
+                transition: transform 1s ease;
+                margin: 0 auto;
+            }
+            .about:hover {
+                transform: scale(1.01, 1.01);
+            }
+            li a {
+                text-decoration: none;
+                color: #c993a6;
+                position: relative;
+                animation: linkstuffOUT 0.5s ease-in-out forwards;
+            }
+            li a:hover {
+                animation: linkstuffIN 0.5s ease-in-out forwards;
+            }
+            li a:focus {
+                animation: linkstuffIN 0.5s ease-in-out forwards;
+            }
+            @keyframes linkstuffOUT {
+                0% {color: #e4c2ce; left: 5px;}
+                100% {color: #c993a6; left: 0px;}
+            }
+            @keyframes linkstuffIN {
+                0% {color: #c993a6; left: 0px}
+                100% {color: #e4c2ce; left: 5px;}
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="whyapa.html">Why APA?</a>
+            <a href="student-resources.html">Citing Sources</a>
+        </nav>
+        <br/><br/><br/><br/><br/>
+        <div id="titlebox">
+            <h1>Home</h1>
+        </div>
+        <main>
+            <div class="about">
+                <span class="aboutimage"></span>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome! On this webpage there is important information to guide you as you prepare your university papers in APA format. <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This website summarizes the key points I make with students in my classes. Each term, I assign papers in the courses I teach and I review the key points described below. <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. My experiences and perspectives - why I decided to create this webpage.<br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I decided to create this webpage because university writing is different from other types of writing. Each assignment has requirements to fulfill. Each paper is completed in stages, and students must take the time to include in-text citations into their papers. <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most students who take courses with me are learning APA as something new or fairly new. Some students arrive to university with experiences from high school on how to present a paper with citations (for example, a high school paper where you included a Bibliography or a Reference List). Many students have shared with me that they are arriving at university without those experiences yet, and 1st year university courses often have writing assignments with lots of new requirements they have not practiced before. <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When I arrived at university, I had to learn more about writing papers. In high school, I wrote a few papers. They were mostly about books we had been assigned to read for English class. In university, I had to learn about the APA style, and over time I got more and more familiar with APA style requirements. I attended workshops offered by the library, on how to use Word and how to write APA papers. These same types of workshops are still offered to students online, and there are handouts online as well at every university, to help students learn about crediting the sources of knowledge. <br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be honest, I do think it was easier to keep track of sources of quotes and information back when everything was in hard copy. When writing a paper, I had stacks of books and printed off articles all around me, and I could visually keep track of papers I had cited, and quotes I had highlighted with my yellow highlighter (my favorite learning tool). Now that most of your sources are digital, you will need to find your own way of organizing your sources while you draft your writing assignments.<br/><br/>
+                </p>
+                <ul>
+                    <li>
+                        <a href="whyapa.html">About APA</a>
+                    </li>
+                    <li>
+                        <a href="whyapa.html#apacontent1">Citations</a>
+                    </li>
+                    <li>
+                        <a href="student-resources.html">Crediting</a>
+                    </li>
+                    <li>
+                        <a href="student-resources.html#apacontent3">Techniques</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
